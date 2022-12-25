@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Комментарии в чате</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="comment_block">
+                <label for="icon">Ваша аватарка* (вставьте ссылку на картинку)</label>
+                <input id="icon" class="comment_item" type="text">
+                <label for="name">Ваше имя:</label>
+                <input id="name" class="comment_item" type="text">
+                <label for="comment">Общий чат:</label>
+                <textarea class="comment_item comment_input" id="comment" cols="30" rows="10"></textarea>
+                <button onclick="addCommintsInMassive()" id="btn" class="comment_button">Добавить</button>
+            </div>
+            <div class="result_comment_block">
+                <h2>Все комментарии:</h2>
+                <div id="usersCommentsArea" class="users_comment_block">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
